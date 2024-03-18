@@ -1,9 +1,17 @@
 import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const bellefair = Bellefair({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+export const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Header />
-      <body className={inter.className}>{children}</body>
+      <body className={bellefair.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
