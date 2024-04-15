@@ -25,12 +25,14 @@ export default function Home() {
           </p>
         </section>
         <section className="text-[#0B0D17] flex justify-center">
-          <Link
-            href="/destination"
-            className="bg-white rounded-full p-12 aspect-square h-fit text-3xl items-center flex"
-          >
-            EXPLORE
-          </Link>
+          <span className="border-transparent ring-0 ring-[#979797] hover:ring-opacity-[13%] hover:ring-[40px] rounded-full ease-in-out transition duration-1000">
+            <Link
+              href="/destination"
+              className="bg-white rounded-full p-12 aspect-square h-fit text-3xl items-center flex"
+            >
+              EXPLORE
+            </Link>
+          </span>
         </section>
       </main>
     </>
