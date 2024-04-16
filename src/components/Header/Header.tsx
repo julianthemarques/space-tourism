@@ -1,5 +1,6 @@
 import { barlowCondensed } from "@/app/layout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -24,24 +25,24 @@ export default function Header() {
         <div className="backdrop-blur-[80px] bg-white/5 min-h-[6rem] min-w-[50rem] flex items-center justify-center">
           <ul className="flex gap-10 text-white">
             <li className="liEffects">
-              <a href="">
-                <span className="font-bold">00</span> HOME
-              </a>
+              <Link href="/">
+                <span className="font-bold text-white">00</span> HOME
+              </Link>
             </li>
             <li className="liEffects">
-              <a href="">
-                <span className="font-bold">01</span> DESTINATION
-              </a>
+              <Link href="/destination">
+                <span className="font-bold text-white">01</span> DESTINATION
+              </Link>
             </li>
             <li className="liEffects">
-              <a href="">
-                <span className="font-bold">02</span> CREW
-              </a>
+              <Link href="">
+                <span className="font-bold text-white">02</span> CREW
+              </Link>
             </li>
             <li className="liEffects">
-              <a href="">
-                <span className="font-bold">03</span> TECHNOLOGY
-              </a>
+              <Link href="">
+                <span className="font-bold text-white">03</span> TECHNOLOGY
+              </Link>
             </li>
           </ul>
         </div>
