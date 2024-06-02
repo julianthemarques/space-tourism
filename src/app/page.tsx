@@ -11,7 +11,7 @@ export default function Home() {
         height={900}
         src="/assets/Bitmap.jpg"
       ></Image>
-      <main className="p-4 relative flex justify-between max-w-screen-lg max-md:flex-col mx-auto mt-[25vh] items-end">
+      <main className="p-4 relative flex justify-between max-w-screen-lg mx-auto mt-[25vh] items-end max-lg:flex max-lg:items-center max-lg:flex-col w-[100vh]">
         <section className="flex flex-col text-white max-w-md gap-6">
           <h2 className="text-[#D0D6F9] text-2xl font-barlow-condensed tracking-[5px]">
             SO, YOU WANT TO TRAVEL TO
@@ -24,7 +24,7 @@ export default function Home() {
             world experience!
           </p>
         </section>
-        <section className="text-[#0B0D17] flex justify-center">
+        <section className="text-[#0B0D17] flex justify-center max-lg:mt-24">
           <span className="border-transparent ring-0 ring-[#979797] hover:ring-opacity-[13%] hover:ring-[40px] rounded-full ease-in-out transition duration-1000">
             <Link
               href="/destination"
