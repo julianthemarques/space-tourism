@@ -4,14 +4,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <Image
-        className="top-0 left-0 object-cover -z-1 w-full h-full fixed"
-        alt=""
-        width={1440}
-        height={900}
-        src="/assets/Bitmap.jpg"
-      ></Image>
-      <main className="p-4 relative flex justify-between max-w-screen-lg mx-auto mt-[25vh] items-end max-lg:flex max-lg:items-center max-lg:flex-col w-[100vh]">
+      <div className="fixed top-0 left-0 -z-1 w-screen h-screen overflow-hidden">
+        <Image
+          className="object-cover w-full h-full max-lg:rotate-90"
+          alt=""
+          width={1440}
+          height={900}
+          src="/assets/Bitmap.jpg"
+        ></Image>
+      </div>
+      <main className="p-4 relative flex justify-between max-w-screen-lg mx-auto mt-[25vh] items-end max-lg:flex max-lg:items-center max-lg:flex-col w-[100vw]">
         <section className="flex flex-col text-white max-w-md gap-6">
           <h2 className="text-[#D0D6F9] text-2xl font-barlow-condensed tracking-[5px]">
             SO, YOU WANT TO TRAVEL TO
