@@ -34,16 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={
-          bellefair.className +
-          " " +
-          bellefair.variable +
-          " " +
-          barlowCondensed.variable +
-          " " +
-          barlow.variable +
-          " min-h-screen"
-        }
+        className={`${bellefair.className} ${bellefair.variable} ${barlowCondensed.variable} ${barlow.variable} min-h-screen`}
       >
         <Header />
         {children}
