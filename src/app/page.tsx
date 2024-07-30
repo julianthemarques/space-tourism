@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="fixed top-0 left-0 -z-1 w-screen h-screen overflow-hidden">
+      <div className="top-0 left-0 object-cover -z-1 w-full h-full fixed">
         <Image
-          className="object-cover w-full h-full max-lg:rotate-90"
+          className="object-cover w-full h-full max-lg:rotate-90 max-lg:scale-150 max-[550px]:scale-[3.0]"
           alt=""
           width={1440}
           height={900}

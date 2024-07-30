@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header
-      className={`flex pt-14 sticky justify-end w-full z-50 ${barlowCondensed.className}`}
+      className={`flex pt-14 sticky justify-end w-full z-50 max-lg:hidden ${barlowCondensed.className}`}
     >
       <div className="flex justify-between w-[90%]">
         <Image
@@ -16,7 +16,7 @@ export default function Header() {
           src={"/assets/logo.png"}
         />
         <Image
-          className="z-50 absolute top-[100px] right-[750px]"
+          className="z-50 absolute top-[100px] right-[750px] max-lg:hidden"
           alt=""
           width={473}
           height={1}
